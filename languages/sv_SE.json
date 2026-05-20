@@ -1,7 +1,7 @@
 {
     "plugin-data": {
-        "name": "ProvidiMailer",
-        "description": "Säker SMTP-posthanterare i företagsklass med avancerad loggning i separata filer och leveransanalys."
+        "name": "Providi Mailer",
+        "description": "Säker SMTP-posthanterare med avancerad loggning i separata filer och leveransanalys."
     },
     "tab-dashboard": "Analyspanel",
     "tab-settings": "Serverinställningar",

@@ -1,6 +1,6 @@
 {
     "plugin-data": {
-        "name": "ProvidiMailer",
+        "name": "Providi Mailer",
         "description": "Enterprise secure SMTP mailer with advanced loose-file session logs and delivery analytics."
     },
     "tab-dashboard": "Analytics Dashboard",

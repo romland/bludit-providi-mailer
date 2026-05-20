@@ -90,8 +90,8 @@ class pluginProvidiMailer extends Plugin {
                 // Hook order constraint: we are exiting before beforeAll() naturally fires, so force it
                 $this->beforeAll();
 
-                $subject = "ProvidiMailer System Test";
-                $message = "<p>This is a live diagnostic test from your ProvidiMailer dashboard.</p>";
+                $subject = "Providi Mailer System Test";
+                $message = "<p>This is a live diagnostic test from your Providi Mailer dashboard.</p>";
                 
                 $success = \ProvidiMailer\BluditMailer::send($to, $subject, $message);
                 
@@ -107,7 +107,8 @@ class pluginProvidiMailer extends Plugin {
                 echo json_encode([
                     'success' => $success,
                     'transcript' => $transcript,
-//                    'debug' => $debugState
+                    // Enable/disable more debugging in transactions
+                    // 'debug' => $debugState
                 ]);
             } catch (\Exception $e) {
                 // Catching Mailer Exceptions so they don't 500 error out

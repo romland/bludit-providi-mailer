@@ -1,8 +1,9 @@
-## ProvidiMailer
+## Mail engine for Bludit CMS
 
-Let's be honest: configuring website email delivery is a nightmare of silent failures, spam filters, and DNS footguns. If you only set up SMTP once a year, you are practically guaranteed to step on a landmine—whether it's a mismatched DMARC policy, a missing PHP extension, or an anti-spoofing filter quietly dropping your emails into the void.
+**ProvidiMailer** is a robust, developer-first mail engine for the Bludit CMS built specifically to eliminate the "black box" of email delivery. Instead of blindly firing off emails and hoping they arrive, this plugin gives you complete observability and proactively stops you from making common configuration mistakes.
 
-**ProvidiMailer** is a robust, developer-first mail engine for the Bludit CMS built specifically to eliminate the "black box" of PHP email delivery. Instead of blindly firing off emails and hoping they arrive, this plugin gives you complete observability and proactively stops you from making common configuration mistakes.
+Let's be honest: configuring website email delivery is a nightmare of silent failures, spam filters, and DNS footguns. If you only set up SMTP once a year, you are practically guaranteed to step on a landmine -- whether it's a mismatched DMARC policy, a missing PHP extension, or an anti-spoofing filter quietly dropping your emails into the void.
+
 
 ### Core Features
 
