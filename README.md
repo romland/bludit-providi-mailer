@@ -1,4 +1,4 @@
-## Mail engine for Bludit CMS
+## Mail engine for Bludit CMS (plugin)
 
 **ProvidiMailer** is a robust, developer-first mail engine for the Bludit CMS built specifically to eliminate the "black box" of email delivery. Instead of blindly firing off emails and hoping they arrive, this plugin gives you complete observability and proactively stops you from making common configuration mistakes.
 
