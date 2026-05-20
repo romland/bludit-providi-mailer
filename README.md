@@ -13,6 +13,16 @@ Let's be honest: configuring website email delivery is a nightmare of silent fai
 * **Global Developer API:** Designed to be the central nervous system for your site's emails. Other plugins and themes (like contact forms or e-commerce modules) can safely hook into `\ProvidiMailer\BluditMailer::send()` to guarantee reliable delivery, keeping all outbound mail routing through one heavily monitored chokepoint.
 * **Multiple Engines:** Native support for Secure SMTP (Office365, Dreamhost, etc.), with an extensible architecture ready for Amazon SES and native PHP mail fallbacks.
 
+## Some screenshots
+<img src="./.github/readme/providi-mailer-ss-cms-001.jpg" width="20%">
+<img src="./.github/readme/providi-mailer-ss-cms-002.jpg" width="20%">
+<img src="./.github/readme/providi-mailer-ss-cms-003.jpg" width="20%">
+<img src="./.github/readme/providi-mailer-ss-cms-004.jpg" width="20%">
+<img src="./.github/readme/providi-mailer-ss-cms-005.jpg" width="20%">
+<img src="./.github/readme/providi-mailer-ss-cms-006.jpg" width="20%">
+<img src="./.github/readme/providi-mailer-ss-cms-007.jpg" width="20%">
+
+
 ## Installation
 
 **1. Clone the plugin**
@@ -35,7 +45,6 @@ git clone https://github.com/PHPMailer/PHPMailer.git
 
 **3. Activate**
 Log in to your Bludit Admin panel, go to **Settings > Plugins**, and click **Activate** on ProvidiMailer. Configure your sender settings and run the built-in diagnostic test to verify your DNS!
-
 
 
 ## How to use ProvidiMailer in your Bludit plugin or theme
