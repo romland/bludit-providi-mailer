@@ -30,7 +30,7 @@ Navigate to your Bludit plugins directory and clone this repository:
 
 ```bash
 cd bl-plugins
-git clone https://github.com/YOUR_USERNAME/providi-mailer.git providi-mailer
+git clone https://github.com/romland/bludit-providi-mailer providi-mailer
 
 ```
 
