@@ -4,7 +4,6 @@
 
 Let's be honest: configuring website email delivery is a nightmare of silent failures, spam filters, and DNS footguns. If you only set up SMTP once a year, you are practically guaranteed to step on a landmine -- whether it's a mismatched DMARC policy, a missing PHP extension, or an anti-spoofing filter quietly dropping your emails into the void.
 
-
 ### Core Features
 
 * **Proactive Footgun Auditor:** Before you even send an email, the dashboard runs a live diagnostic check against your sender domain. It instantly flags missing SPF/DMARC records, domain mismatches, unresolvable hosts, missing OpenSSL extensions, and free-mail provider conflicts.
@@ -14,6 +13,8 @@ Let's be honest: configuring website email delivery is a nightmare of silent fai
 * **Multiple Engines:** Native support for Secure SMTP (Office365, Dreamhost, etc.), with an extensible architecture ready for Amazon SES and native PHP mail fallbacks.
 
 ## Some screenshots
+The screenshots are in Swedish but localization for English exists.
+
 <img src="./.github/readme/providi-mailer-ss-cms-001.jpg" width="20%">
 <img src="./.github/readme/providi-mailer-ss-cms-002.jpg" width="20%">
 <img src="./.github/readme/providi-mailer-ss-cms-003.jpg" width="20%">
@@ -31,7 +32,32 @@ Navigate to your Bludit plugins directory and clone this repository:
 ```bash
 cd bl-plugins
 git clone https://github.com/romland/bludit-providi-mailer providi-mailer
+```
 
+Directory should look like this (at least at the time of writing):
+```bash
+$ tree providi-mailer -I PHPMailer
+providi-mailer
+├── languages
+│   ├── en.json
+│   └── sv_SE.json
+├── metadata.json
+├── plugin.php
+├── README.md
+├── src
+│   ├── Admin
+│   │   ├── AdminUi.php
+│   │   └── DiagnosticAuditor.php
+│   ├── BluditMailer.php
+│   ├── Engines
+│   │   ├── AmazonSesEngine.php
+│   │   ├── MailEngineInterface.php
+│   │   ├── NativePhpEngine.php
+│   │   └── SecureSmtpEngine.php
+│   └── Logger.php
+└── vendor
+
+5 directories, 13 files
 ```
 
 **2. Install dependencies (PHPMailer)**
