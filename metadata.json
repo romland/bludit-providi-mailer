@@ -1,0 +1,11 @@
+{
+    "name": "Providi Mailer",
+    "description": "Central mailer for Bludit with extensive logging.",
+    "version": "1.0",
+    "author": "Joakim Romland",
+    "email": "",
+    "website": "",
+    "releaseDate": "2026-05-18",
+    "compatible": "3.22.0",
+    "notes": ""
+}
